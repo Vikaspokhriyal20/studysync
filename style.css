@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal&family=Inter:wght@200&family=Poppins&family=Urbanist:ital,wght@0,100;0,200;0,400;0,500;1,100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arsenal;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+
+.header-content {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+.logo>h4
+{
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+}
+
+.logo>h4::first-letter
+{
+    color: blueviolet;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+
+.nav-link {
+    font-size: 1rem;
+    transform: color 0.1s;
+    text-transform: capitalize;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: blueviolet;
+    font-weight: 600;
+}
+
+.contact-btn {
+    border: none;
+    border-radius: 0.255rem;
+    padding: 0.6rem;
+    background-color:blueviolet;
+    color: white;
+    font-size: 1rem;
+}
+
+#menu {
+    display: none;
+    padding: 0.6rem;
+    border: none;
+    background-color: #fff;
+}
+
+.bi
+{
+    font-size: 22px;
+    color: blueviolet;
+    filter: drop-shadow(2px 1px 2px rgb(191, 144, 235));
+}
+
+@media screen and (max-width:634px) {
+    .nav {
+        display: none;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+    body{
+        padding: 0.6rem;
+    }
+}
