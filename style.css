@@ -103,10 +103,12 @@ body {
     max-width: 1000px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
     padding: 0.6rem;
     gap: 2rem;
+    justify-content: center;
     align-items: center;
+    margin-top: 1.8rem;
 }
 
 .content-left
@@ -129,7 +131,7 @@ body {
 
 .section-label
 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: blueviolet;
     text-transform: capitalize;
@@ -138,7 +140,7 @@ body {
 .section-title
 {
     font-size: 2.2rem;
-    padding: 1.1rem;
+    padding: 1rem;
     text-transform: capitalize;
 }
 .section-description
@@ -152,7 +154,7 @@ body {
 display: flex;
 gap: 2rem;
 padding: 1rem;
-margin-top:1rem;
+margin-top:0.8rem;
 justify-content: center;
 align-items: center;
 }
@@ -165,7 +167,7 @@ align-items: center;
     background-color: blueviolet;
     color: white;
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: capitalize;
     transition: all 0.1s;
 }
@@ -189,9 +191,9 @@ background-color: rgb(143, 96, 187);
 }
 
 .img-container{
-    border-radius: 0.625rem;
+    border-radius: 0.350rem;
     overflow: hidden;
-    box-shadow: 0px 4px 6px rgb(175, 137, 211);
+    box-shadow: 0px 4px 6px #F5F5F5;
     height: 50vh;
     object-fit: cover;
 }
@@ -226,10 +228,58 @@ background-color: rgb(143, 96, 187);
     }
     .section-description{
         font-size:0.9rem;
-        width: 80%;
+        width: 78%;
     }
     .img-container
     {
         height: 67vh;
+    }
+}
+
+.company-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1.8rem;
+    animation: slideFromLeft 1s ease forwards;
+    opacity: 0;
+}
+.company-grid
+{
+    background-color:#F5F5F5;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 3.6rem;
+    padding: 1.2rem 2.2rem;
+    border-radius: 00.350rem;
+    margin-top: 1.8rem;
+    margin-bottom: 10rem;
+}
+.company-logo
+{
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem
+}
+
+.svg-icon
+{
+    height: 1.4rem;
+}
+
+@media screen and (min-width:634px) {
+    .company-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+    .company-title
+    {
+        font-size: 2rem;
+        font-weight: bold;
+        
     }
 }
