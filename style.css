@@ -519,6 +519,7 @@ font-size:0.8rem;
     padding: 2rem;
     justify-content: center;
     align-items: flex-start;
+    width: 50%;
 }
 .news-info{
     text-align: left;
@@ -561,6 +562,7 @@ font-size:0.8rem;
 .newsletter-footer{
     font-size: 0.8rem;
     letter-spacing: 1px;
+
 }
 
 .newsletter-footer a
@@ -573,6 +575,10 @@ font-size:0.8rem;
 @media screen and (max-width:634px) {
     .newsletter-left{
         display: none;
+    }
+    .newsletter-right{
+        width: 100%;
+        padding: 1rem;
     }
 }
 
