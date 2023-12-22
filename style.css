@@ -532,7 +532,7 @@ font-size:0.8rem;
     font-size: 1.4rem;
     font-weight: bold;
 }
-.news-info p
+.newsletter-sign
 {
     color: black;
     font-size: 0.8rem;
@@ -569,7 +569,6 @@ font-size:0.8rem;
 .newsletter-footer a
 {
     color: blue;
-    font-weight: 600;
     text-align: left;
 }
 
@@ -579,9 +578,25 @@ font-size:0.8rem;
     }
     .newsletter-right{
         width: 100%;
-        padding: 1rem;
+        padding: 1.8rem;
+        background-image: url('https://media.istockphoto.com/id/1191995863/photo/old-wall-texture-cement-dark-black-gray-background-abstract-grey-color-design-are-light-with.webp?b=1&s=170667a&w=0&k=20&c=BuY07Ovf_ffL73OKZNi0VYGRbhZncDfUg8Jn0fBChEo=');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
+    }
+    .newsletter-heading{
+        color: white;
+
+    }
+    .newsletter-sign{
+        color: white;
+    }
+    .newsletter-footer a{
+        color: blueviolet;
     }
 }
+
 .footer-container{
     background-color: #F5F5F5;
     padding: 1rem;
